@@ -1,0 +1,872 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Noto Serif JP', "Hiragino Kaku Gothic ProN",
+        "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro",
+        メイリオ,
+        Meiryo,
+        "ＭＳ Ｐゴシック",
+        "MS PGothic",
+        sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+    color: #3d3d40;
+    text-align: center;
+}
+
+.wrapper {
+    /* min-width: 1100px; */
+    margin: 0px auto;
+    text-align: left;
+    overflow: hidden;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+/*-------------------------
+        header
+--------------------------*/
+.header-wrap {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 15px 20px;
+    background-color: rgb(41, 68, 89);
+}
+
+
+.header-wrap .temporary-image {
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #eee;
+}
+
+.header-wrap .tel {
+    position: absolute;
+    top: 23px;
+    right: 30px;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    /* font-weight: bold; */
+}
+
+.header-wrap .tel .icon {
+    margin-right: 10px;
+}
+
+/*-------------------------
+       first view
+--------------------------*/
+
+.first-view .wrap {
+    position: relative;
+    /* background: url('../image/bg-sample.jpg') 0 0 no-repeat;
+    background-size: cover;
+    background-position: center center; */
+    background-color: rgb(219, 236, 250);
+    padding-top: 50%;
+    width: 100%;
+    height: 550px;
+    padding: 40px 40px;
+    font-size: 0;
+
+}
+
+.text-wrap {
+    /* display: inline-block; */
+    /* width: 40%; */
+    /* margin-right: 30px; */
+}
+
+.text-wrap .catchcopy {
+    margin: 160px 0 0;
+    font-size: 5rem;
+    text-align: left;
+    /* font-weight: 900; */
+    letter-spacing: 1px;
+
+}
+
+.text-wrap .sub-catchcopy {
+    font-size: 1.9rem;
+    text-align: left;
+    line-height: 2;
+    margin-left: 7px;
+    letter-spacing: 1px;
+}
+
+/* 
+.first-view .temporary-image {
+    position: absolute;
+    top: 60px;
+    right: 3%;
+    max-width: 450px;
+    width: 60%;
+    height: 350px;
+    line-height: 350px;
+    text-align: center;
+    background-color: rgb(208, 208, 208);
+    vertical-align: top;
+    font-size: 3rem;
+} */
+
+.point-wrap {
+    display: inline-block;
+    padding: 20px 0 0;
+}
+
+.point-wrap ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.point-item {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    border: 5px solid rgb(41, 68, 89);
+    background-color: #fff;
+    color: rgb(41, 68, 89);
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    letter-spacing: 1px;
+}
+
+.point-item .first {
+    position: absolute;
+    top: 5px;
+    left: 37px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.point-item .second {
+    position: absolute;
+    top: 6px;
+    left: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.point-item .third {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.point-item span {
+    font-size: 1rem;
+
+}
+
+.point-item .icon {
+    font-size: 5.3rem;
+}
+
+.first-view .btn {
+    position: absolute;
+    bottom: 54px;
+    right: 40px;
+    width: 460px;
+    height: 70px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    background-color: rgb(255, 193, 37);
+}
+
+.first-view .btn a {
+    display: block;
+    width: 460px;
+    height: 70px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.8rem;
+    line-height: 70px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 3px;
+    transition: .3s;
+}
+
+.btn a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*-------------------------
+       nayami
+--------------------------*/
+
+.heading {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 120px;
+    background-color: #fff;
+}
+
+.nayami .wrap {
+    background: url('../image/cost-of-living.jpg')no-repeat;
+    background-size: cover;
+    height: 430px;
+    /* padding: 0 80px 40px; */
+}
+
+.nayami .nayami-box {
+    width: 100%;
+    height: auto;
+    padding: 60px 100px;
+}
+
+.nayami .nayami-box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nayami .nayami-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    float: left;
+}
+
+.nayami .nayami-box li span {
+    border-bottom: 1px dotted #000;
+}
+
+.nayami .nayami-box .icon {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+.nayami .nayami-box p {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+
+.nayami .kaiketsu {
+    margin: 0;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 120px;
+    background-color: #fff;
+}
+
+.triangle {
+    position: relative;
+    bottom: -50px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-top: 50px solid #fff;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+/*-------------------------
+       reason
+--------------------------*/
+.reason .wrap {
+    background-color: rgb(219, 236, 250);
+    padding: 40px 0 50px;
+    text-align: center;
+}
+
+.reason .heading {
+    background-color: rgb(219, 236, 250);
+    color: inherit;
+}
+
+.reason .heading span {
+    font-size: 6rem;
+    color: rgb(255, 193, 37);
+    font-weight: 900;
+
+}
+
+.reason-wrap {
+    font-size: 0;
+}
+
+.reason-box {
+    display: inline-block;
+    width: 25%;
+    height: 300px;
+    margin-right: 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    /* border: 3px solid rgb(41, 68, 89); */
+    text-align: center;
+    vertical-align: top;
+}
+
+.reason-box .icon {
+    font-size: 7.5rem;
+    margin-bottom: 20px;
+    color: rgb(28, 50, 69);
+}
+
+.reason-box .reason-item {
+    margin: 10px 0;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    /* font-weight: 600; */
+}
+
+.reason-box .reason-item span {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.reason-box .reason-text {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.reason-box .reason-text span {
+    border-bottom: 1px dotted;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.reason-box .reason-detail {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.reason .wrap .text {
+    margin: 100px 0 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.reason .wrap .text span {
+    margin-left: 10px;
+    font-size: 7rem;
+    font-weight: bold;
+    border-bottom: 1px dotted;
+    letter-spacing: 3px;
+}
+
+.reason .wrap .text:before {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: 45%;
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-top: 50px solid rgb(41, 68, 89);
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+/*-------------------------
+        買取り3step
+--------------------------*/
+.step .wrap {
+    background-color: #fff;
+    padding: 0 40px 40px;
+    text-align: center;
+}
+
+.step .heading span {
+    font-weight: 900;
+    font-size: 6rem;
+    color: rgb(255, 193, 37);
+}
+
+.step-wrap {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.step-wrap .step-box {
+    display: inline-block;
+    width: 28%;
+    margin: 0 20px;
+    vertical-align: top;
+}
+
+.step-wrap .step-box:last-child {
+    margin: 0;
+}
+
+.step-wrap .step-box .step-title {
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 30px;
+    background-color: rgba(41, 68, 89);
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.step img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.step .image:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-left: 20px solid rgb(28, 50, 69);
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+.step .image:after:last-child {
+    display: none;
+}
+
+.step-wrap .step-box .step-desc {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 15px 15px 0;
+    text-align: left;
+    margin: 0;
+}
+
+.step .note {
+    width: 80%;
+    /* height: 100px; */
+    margin: 50px auto;
+    padding: 20px 40px;
+    background-color: #eee;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.step .note ul {
+    margin: 0;
+    padding: 0;
+}
+
+.step .note .note-item {
+    list-style: none;
+}
+
+/*-------------------------
+        voice
+--------------------------*/
+.voice .wrap {
+    background-color: rgb(219, 236, 250);
+    padding: 0 0 80px;
+    text-align: center;
+}
+
+.voice .heading {
+    background-color: rgb(219, 236, 250);
+}
+
+.voice-wrap {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 4px solid rgb(28, 50, 69);
+    border-radius: 10px;
+    text-align: left;
+}
+
+.voice-box .voice-icon-wrap {
+    display: inline-block;
+    font-size: 4rem;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(28, 50, 69);
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.voice-box {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.voice-text {
+    display: inline-block;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.voice-name {
+    margin: 0;
+    text-align: right;
+    font-size: 1.2rem;
+
+}
+
+/*-------------------------
+        inquiry
+--------------------------*/
+.inquiry .wrap {
+    background-color: #fff;
+    padding: 0 0 80px;
+}
+
+.inquiry-wrap {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.inquiry-box {
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.inquiry-box span {
+    margin-right: 10px;
+}
+
+.inquiry-item {
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    vertical-align: middle;
+    background-color: rgb(219, 236, 250);
+}
+
+.answer {
+    padding-left: 20px;
+    font-size: 1.4rem;
+    background-color: #fff;
+
+}
+
+/*-------------------------
+       contact
+--------------------------*/
+.contact .wrap {
+    background-color: rgb(219, 236, 250);
+    padding: 0 0 80px;
+}
+
+.contact .heading {
+    background-color: rgb(219, 236, 250);
+}
+
+
+.contact .form {
+    /* position: relative; */
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 80px 50px 0;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.contact .form-item {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.contact .form-item input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+}
+
+.contact .form-item span {
+    display: inline-block;
+    width: 23px;
+    height: 15px;
+    margin-left: 5px;
+    border-radius: 3px;
+    background-color: rgb(254, 98, 98);
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contact .form-item .sub {
+    background-color: rgb(180, 180, 180);
+
+}
+
+
+.contact .form-item lable {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contact .form-item .file-wrap {
+    display: inline-block;
+}
+
+
+.contact textarea {
+    width: 500px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    vertical-align: top;
+}
+
+/*-------------------------
+       contact
+--------------------------*/
+.call-and-line .wrap {
+    background-color: #fff;
+    padding: 40px 0 80px;
+}
+
+
+.call-line-wrap {
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    margin-right: 30px;
+    background-color: rgb(219, 236, 250);
+    border-radius: 10px;
+    vertical-align: top;
+    letter-spacing: 1px;
+}
+
+.call-line-wrap .text {
+    font-size: 2.2rem;
+    font-weight: normal;
+}
+
+.call-line-wrap .icon {
+    margin-top: 20px;
+    font-size: 10rem;
+}
+
+.call-line-wrap .tel {
+    margin-top: 30px;
+    font-size: 3.4rem;
+}
+
+.call-line-wrap img {
+    box-shadow: 0 7px 10px 5px rgba(0, 0, 0, .15),
+        0 0 5px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.call-line-wrap img:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    /* box-shadow: 0 10px 18px 5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1; */
+}
+
+.call-line-wrap .line-id {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+/*-------------------------
+            sale
+--------------------------*/
+.sale .wrap {
+    position: relative;
+    background-color: rgb(219, 236, 250);
+    padding: 40px 0 80px;
+}
+
+.sale-box {
+    position: relative;
+    display: inline-block;
+}
+
+.sale-text-wrap {
+    display: inline-block;
+    width: 600px;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.sale-text-wrap .desc {
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.sale-text-wrap .sub-desc {
+    position: absolute;
+    top: 120px;
+    left: 230px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sale-text-wrap .second {
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.sale-box .temporary-image {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    background-color: #eee;
+    line-height: 300px;
+}
+
+.sale .btn {
+    position: absolute;
+    bottom: 60px;
+    left: 7%;
+    width: 500px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(255, 193, 37);
+    transition: .3s;
+}
+
+.sale .btn a {
+    display: block;
+    width: 500px;
+    height: 70px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-------------------------
+            footer
+--------------------------*/
+.footer {
+    position: relative;
+    background-color: rgb(28, 50, 69);
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.927);
+}
+
+.footer .logo {
+    width: 180px;
+    height: 40px;
+    background-color: #eee;
+    line-height: 40px;
+    color: #000;
+}
+
+.footer .copyright {
+    position: absolute;
+    top: 30px;
+    right: 20%;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.footer .back-to-top {
+    position: absolute;
+    top: -45px;
+    right: 5%;
+    margin: 0;
+    width: 90px;
+    height: 45px;
+    border-radius: 90px 90px 0 0;
+    -moz-border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    background-color: #fff;
+}
+
+.footer .back-to-top a {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 45px;
+    border-radius: 90px 90px 0 0;
+    -moz-border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    text-decoration: none;
+    color: #3d3d40;
+}
+
+.footer .back-to-top .icon {
+    font-size: 2rem;
+    margin-top: 4px;
+    color: #3d3d40;
+}
+
+.footer .back-to-top a:after {
+    content: 'TOP';
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    left: 31px;
+}

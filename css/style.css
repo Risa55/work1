@@ -611,20 +611,26 @@ body {
 
 .contact .form {
     /* position: relative; */
-    width: 60%;
     margin: 0 auto;
-    padding: 30px 80px 50px 0;
+    padding: 30px 0 50px 0;
     border-radius: 10px;
-    text-align: right;
+    text-align: center;
 }
 
 .contact .form-item {
-    display: inline-block;
     margin: 15px 0;
 }
 
+
+
+.contact .form-item select {
+    width: 400px;
+    height: 30px;
+}
+
+
 .contact .form-item input {
-    width: 300px;
+    width: 400px;
     height: 30px;
     border-radius: 5px;
     border: none;
@@ -652,7 +658,9 @@ body {
 
 .contact .form-item lable {
     display: inline-block;
-    margin-right: 10px;
+    width: 140px;
+    text-align: left;
+    margin-right: 16px;
 }
 
 .contact .form-item .file-wrap {
@@ -661,7 +669,7 @@ body {
 
 
 .contact textarea {
-    width: 500px;
+    width: 400px;
     height: 120px;
     padding: 10px;
     border-radius: 5px;
@@ -869,4 +877,23 @@ body {
     position: absolute;
     bottom: 2px;
     left: 31px;
+}
+
+.display-block {
+    display: block;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+@media screen and ( max-width:768px) {
+    .contact .form {
+        padding: 10px 40px;
+    }
+
+    .contact .form-item {
+        margin: 15px 0;
+        text-align: left;
+    }
 }

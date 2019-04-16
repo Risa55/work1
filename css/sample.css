@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.inline-box {
+  display: inline-block;
+}
+
+.item-box {
+  position: relative;
+  border: solid 1px;
+  width: 400px;
+  height: 400px;
+  margin: 24px;
+  background-color: darkgray;
+}
+
+.item-box:nth-child(1)::before,
+.item-box:nth-child(2)::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid black;
+  position: absolute;
+  top: 410px;
+  left: 170px;
+}
+
+.parent {
+  text-align: center;         /* 子要素を左右中央揃えにする */
+  border: solid 2px;          /* 枠線指定 */
+}
+
+/* 矢印を下にする */
+@media screen and (min-width: 950px) { 
+  .item-box:nth-child(1)::before,
+  .item-box:nth-child(2)::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid black;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    position: absolute;
+    top: 160px;
+    left: 410px;
+  }
+} 

@@ -286,6 +286,7 @@ body {
 
 .nayami .kaiketsu {
     margin: 0;
+    padding-top: 40px;
     font-size: 3.5rem;
     letter-spacing: 3px;
     font-weight: normal;
@@ -437,7 +438,7 @@ body {
 }
 
 .step-wrap .step-box:last-child {
-    margin: 0;
+    /* margin: 0; */
 }
 
 .step-wrap .step-box .step-title {
@@ -452,17 +453,22 @@ body {
 }
 
 .step img {
-    position: relative;
     width: 100%;
     height: auto;
 }
 
-.step .image:after {
-    content: "";
+.step .image {
+    position: relative;
+}
+
+/* 
+.step .image:nth-child(1)before,
+.image:nth-child(2)before {
+    content: '';
     display: block;
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 80px;
+    right: -28px;
     width: 0;
     height: 0;
     margin: 0;
@@ -471,9 +477,23 @@ body {
     border-top: 20px solid transparent;
 }
 
-.step .image:after:last-child {
-    display: none;
+.step .image:after:nth-child(2) {
+    display: none; */
+
+
+.step-box:nth-child(1)::after,
+.step-box:nth-child(2)::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid black;
+    position: absolute;
+    top: 410px;
+    left: 170px;
 }
+
 
 .step-wrap .step-box .step-desc {
     width: 100%;
@@ -608,11 +628,11 @@ body {
     background-color: rgb(219, 236, 250);
 }
 
-
 .contact .form {
     /* position: relative; */
     margin: 0 auto;
     padding: 30px 0 50px 0;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
 }
@@ -650,11 +670,9 @@ body {
     vertical-align: middle;
 }
 
-.contact .form-item .sub {
+.contact .form-item span .sub {
     background-color: rgb(180, 180, 180);
-
 }
-
 
 .contact .form-item lable {
     display: inline-block;
@@ -662,11 +680,6 @@ body {
     text-align: left;
     margin-right: 16px;
 }
-
-.contact .form-item .file-wrap {
-    display: inline-block;
-}
-
 
 .contact textarea {
     width: 400px;
@@ -677,9 +690,10 @@ body {
     vertical-align: top;
 }
 
-/*-------------------------
-       contact
---------------------------*/
+.contact .form-item .file-wrap {
+    display: block;
+}
+
 .call-and-line .wrap {
     background-color: #fff;
     padding: 40px 0 80px;
@@ -729,6 +743,101 @@ body {
     margin: 0;
     margin-top: 10px;
     font-size: 3rem;
+}
+
+.contact .btn-wrap {
+    text-align: center;
+}
+
+.contact .btn {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 30px auto 0;
+    line-height: 50px;
+    background-color: rgb(255, 193, 37);
+    border-radius: 30px;
+    border: 0;
+    transition: .3s;
+}
+
+.contact .btn a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: 0;
+    text-decoration: none;
+}
+
+/*---*/
+.form {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: right;
+    text-align: center;
+}
+
+.form-item {
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.form-item select {
+    width: 300px;
+    height: 30px;
+}
+
+.form-item input {
+    width: 300px;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-item lable {
+    display: inline-block;
+    margin-right: 10px;
+    width: 140px;
+    text-align: left;
+    margin-right: 16px;
+}
+
+/* textarea {
+    width: 500px;
+    width: 400px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 2px;
+    left: 31px;
+} */
+
+
+.display-block {
+    display: block;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+
+@media screen and (max-width:768px) {
+    .form {
+        padding: 10px 40px;
+        margin: 0 auto;
+    }
+
+    .form-item {
+        margin: 15px 0;
+        text-align: left;
+    }
 }
 
 /*-------------------------

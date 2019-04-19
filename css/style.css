@@ -624,6 +624,7 @@ body {
 }
 
 .contact .form {
+  <<<<<<< HEAD
   /* position: relative; */
   margin: 0 auto;
   padding: 10px 0 50px 0;
@@ -648,6 +649,34 @@ body {
   display: block;
   margin: 0 width:15px;
   height: 15px;
+  =======
+  /* position: relative; */
+  margin: 0 auto;
+  padding: 30px 0 50px 0;
+  width: 60%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact .form-item {
+  margin: 15px 0;
+}
+
+
+
+.contact .form-item select {
+  width: 400px;
+  height: 30px;
+}
+
+
+.contact .form-item input {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  text-align: left;
+  >>>>>>>ff039fbf1c3e5716519cd16b262f3e9dcfe81dd2
 }
 
 .contact .form-item select {
@@ -702,7 +731,7 @@ body {
 }
 
 .contact .form-item lable {
-  display: inline-block;
+  <<<<<<< HEAD display: inline-block;
   width: 140px;
   text-align: left;
   margin-right: 16px;
@@ -715,6 +744,20 @@ body {
   border-radius: 5px;
   border: none;
   vertical-align: top;
+  =======display: inline-block;
+  width: 140px;
+  text-align: left;
+  margin-right: 16px;
+}
+
+.contact textarea {
+  width: 400px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  vertical-align: top;
+  >>>>>>>ff039fbf1c3e5716519cd16b262f3e9dcfe81dd2
 }
 
 .contact .form-item .file-wrap {
@@ -1009,9 +1052,49 @@ body {
 }
 
 .footer .back-to-top a:after {
-  content: "TOP";
+  <<<<<<< HEAD content: "TOP";
   display: block;
   position: absolute;
   bottom: 2px;
   left: 31px;
 }
+
+=======content: 'TOP';
+display: block;
+position: absolute;
+bottom: 2px;
+left: 31px;
+}
+
+.label-top {
+  margin-right: 30px;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+@media screen and (max-width:768px) {
+  .contact .form {
+    padding: 10px 40px;
+  }
+
+  .contact .form-item {
+    margin: 15px 0;
+    text-align: left;
+  }
+}
+
+>>>>>>>ff039fbf1c3e5716519cd16b262f3e9dcfe81dd2

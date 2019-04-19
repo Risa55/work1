@@ -80,7 +80,7 @@
         </section>
         <section class="reason">
             <div class="wrap">
-                <h1 class="heading">オカセイが選ばれている<span>３</span>つの理由</h1>
+                <h1 class="heading">医療ベッド買取.comが選ばれる<span>３</span>つの理由</h1>
                 <div class="reason-wrap">
                     <div class="reason-box">
                         <i class="fas fa-coins icon"></i>
@@ -100,8 +100,8 @@
                         <p class="reason-detail">※一部エリア不可 。先ずはお問い合わせ下さい。</p>
                     </div>
                 </div>
-
-                <div class="text">だから、リピート率<span>No.1!!</span>（仮）</div>
+                <div class="text first">だから、リピート率<span>No.1!!</span></div>
+                <div class="text">だから、医療ベッド買取実績<span>No.1!!</span></div>
             </div>
     </div>
     </section>
@@ -142,7 +142,6 @@
         </div>
     </section>
     <section class="voice">
-
         <h1 class="heading">お客様の声</h1>
         <div class="wrap">
             <div class="voice-wrap">
@@ -193,8 +192,17 @@
         </div>
     </section>
     <section class="contact">
-        <h1 class="heading">お問い合わせフォーム</h1>
+        <h1 class="heading">お問い合わせ・申し込み</h1>
         <div class="wrap">
+            <div class="label-top vertical-top display-inline-block">
+                <lable class="margin-right" for="text">利用内容<span>必須</span></lable>
+                <div class="display-inline-block margin-none">
+                    <label class="otoiawase-btn"><input type="radio" name="entryPlan" value="問い合わせする"
+                            onclick="entryChange1();" checked="checked" />問い合わせ</label>
+                    <label><input type="radio" name="entryPlan" value="申し込みする"
+                            onclick="entryChange1();" />申し込み（依頼）</label>
+                </div>
+            </div>
             <form class="form">
                 <div class="form-item">
                     <lable for="text">病院・会社名<span>必須</span></lable><input type="text">
@@ -230,12 +238,14 @@
                             <option value="platz">プラッツ製</option>
                         </select>
                     </div>
-                    <div class="form-item">
-                        <lable for="text">写真の添付<span class="sub">任意</span></lable>
-                        <div class="file-wrap">
-                            <input type="file" name="attachment_file">
-                            <input type="file" name="attachment_file">
-                            <input type="file" name="attachment_file">
+                    <div class="file-wrap">
+                        <div class="label-top vertical-top display-inline-block">
+                            <lable for="text">写真の添付<span class="sub">任意</span></lable>
+                        </div>
+                        <div class="display-inline-block margin-none">
+                            <input type="file" name="attachment_file" class="display-block">
+                            <input type="file" name="attachment_file" class="display-block">
+                            <input type="file" name="attachment_file" class="display-block">
                         </div>
                     </div>
                     <div class="form-item">
@@ -247,6 +257,7 @@
                     <div class="btn"><a href="#">送信</a></div>
                 </div>
         </div>
+        <div id="firstNotice">
     </section>
     <section class="call-and-line">
         <div class="wrap">

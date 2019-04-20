@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-  /* min-width: 1100px; */
+  /* min-width: 1000px; */
   margin: 0px auto;
   text-align: left;
   overflow: hidden;
@@ -77,21 +77,15 @@ body {
 
 .first-view .wrap {
   position: relative;
-  /* background: url('../image/bg-sample.jpg') 0 0 no-repeat;
-    background-size: cover;
-    background-position: center center; */
+  background: url('../image/bg.jpg') 0 0 no-repeat;
+  background-size: cover;
+  background-position: center center;
   background-color: rgb(219, 236, 250);
   padding-top: 50%;
   width: 100%;
   height: 550px;
   padding: 40px 40px;
   font-size: 0;
-}
-
-.text-wrap {
-  /* display: inline-block; */
-  /* width: 40%; */
-  /* margin-right: 30px; */
 }
 
 .text-wrap .catchcopy {
@@ -110,20 +104,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* 
-.first-view .temporary-image {
-    position: absolute;
-    top: 60px;
-    right: 3%;
-    max-width: 450px;
-    width: 60%;
-    height: 350px;
-    line-height: 350px;
-    text-align: center;
-    background-color: rgb(208, 208, 208);
-    vertical-align: top;
-    font-size: 3rem;
-} */
+
 
 .point-wrap {
   display: inline-block;
@@ -232,16 +213,15 @@ body {
 }
 
 .nayami .wrap {
-  background: url("../image/cost-of-living.jpg") no-repeat;
+  background: url("../image/nayami.jpg") no-repeat;
   background-size: cover;
   height: 430px;
-  /* padding: 0 80px 40px; */
 }
 
 .nayami .nayami-box {
   width: 100%;
   height: auto;
-  padding: 60px 100px;
+  padding: 60px 150px 60px 100px;
 }
 
 .nayami .nayami-box:after {
@@ -255,7 +235,11 @@ body {
   padding: 0;
   list-style: none;
   text-align: left;
-  float: left;
+  float: right;
+}
+
+.nayami .nayami-box li {
+  text-align: right;
 }
 
 .nayami .nayami-box li span {
@@ -324,14 +308,25 @@ body {
 .reason-box {
   display: inline-block;
   width: 25%;
-  height: 300px;
+  height: 310px;
   margin-right: 20px;
   padding: 40px 20px;
   border-radius: 10px;
   background-color: #fff;
-  /* border: 3px solid rgb(41, 68, 89); */
   text-align: center;
   vertical-align: top;
+}
+
+.reason-box .muryou {
+  position: relative;
+  top: -20px;
+  width: 80px;
+  height: 100px;
+  font-size: 8rem;
+  font-weight: bold;
+  margin: 0 auto;
+  color: rgb(28, 50, 69);
+  letter-spacing: 8px;
 }
 
 .reason-box .icon {
@@ -344,7 +339,6 @@ body {
   margin: 10px 0;
   font-size: 2.3rem;
   letter-spacing: 1px;
-  /* font-weight: 600; */
 }
 
 .reason-box .reason-item span {
@@ -371,9 +365,13 @@ body {
 }
 
 .reason .wrap .text {
-  /* margin: 100px 0 0; */
+  margin-top: 10px;
   font-size: 3rem;
   letter-spacing: 2px;
+}
+
+.reason .wrap .text.first {
+  margin: 80px 0 0;
 }
 
 .reason .wrap .text span {
@@ -384,11 +382,11 @@ body {
   letter-spacing: 3px;
 }
 
-.reason .wrap .text .first:before {
+.reason .wrap .text:before {
   content: "";
   display: block;
   position: relative;
-  bottom: 20px;
+  top: 0;
   left: 45%;
   width: 0;
   height: 0;
@@ -398,8 +396,13 @@ body {
   border-left: 50px solid transparent;
 }
 
+.reason .wrap .text:last-child:before {
+  content: "";
+  display: none;
+}
+
 /*-------------------------
-        買取り3step
+        3step
 --------------------------*/
 .step .wrap {
   background-color: #fff;
@@ -510,9 +513,115 @@ body {
 }
 
 /*-------------------------
+        taishousha
+--------------------------*/
+.taishousha .heading {
+  padding: 20px 0;
+  line-height: 70px;
+  background-color: rgb(219, 236, 250);
+}
+
+.taishousha-wrap {
+  background-color: rgb(219, 236, 250);
+  padding: 1px 50px 50px;
+}
+
+.taishousha ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 30px;
+  /* background-color: #fff; */
+}
+
+.taishousha-item {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+
+
+}
+
+.taishousha-name {
+  position: absolute;
+  top: -25px;
+  left: -8px;
+  width: 120px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: rgb(28, 50, 69);
+  color: #fff;
+  line-height: 25px;
+  font-size: 1.3rem;
+}
+
+.taishousha-name.long-1 {
+  width: 160px;
+}
+
+.taishousha-name.long-2 {
+  width: 300px;
+}
+
+.taishousha-desc {
+  padding: 25px;
+  margin: 30px 0;
+  letter-spacing: 1px;
+  text-align: left;
+  border: 1px solid #3d3d40;
+  border-radius: 10px;
+}
+
+/*-------------------------
+        brand
+--------------------------*/
+.brand-wrap {
+  padding: 0 50px 50px;
+}
+
+.brand-box {
+  position: relative;
+  display: inline-block;
+  width: 230px;
+  height: 200px;
+  text-align: center;
+  /* border: 1px solid #000; */
+  vertical-align: bottom;
+}
+
+/* .brand-name {
+  margin: 0;
+  font-size: 1.3rem;
+
+} */
+
+.brand .paramount {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.brand .france {
+  position: absolute;
+  top: 50px;
+  left: 15px;
+}
+
+.brand .seahonence {
+  position: absolute;
+  top: 80px;
+  left: 15px;
+}
+
+.brand .platz {
+  position: absolute;
+  top: 70px;
+  left: 15px;
+}
+
+/*-------------------------
         voice
 --------------------------*/
-.voice .wrap {
+/* .voice .wrap {
   background-color: rgb(219, 236, 250);
   padding: 0 0 80px;
   text-align: center;
@@ -560,14 +669,18 @@ body {
   margin: 0;
   text-align: right;
   font-size: 1.2rem;
-}
+} */
 
 /*-------------------------
         inquiry
 --------------------------*/
 .inquiry .wrap {
-  background-color: #fff;
+  background-color: rgb(219, 236, 250);
   padding: 0 0 80px;
+}
+
+.inquiry .heading {
+  background-color: rgb(219, 236, 250);
 }
 
 .inquiry-wrap {
@@ -591,11 +704,13 @@ body {
   padding: 10px 20px;
   font-size: 1.8rem;
   vertical-align: middle;
-  background-color: rgb(219, 236, 250);
+  background-color: rgb(26, 42, 55);
+  color: #fff;
 }
 
 .answer {
-  padding-left: 20px;
+  margin: 0;
+  padding: 20px 20px;
   font-size: 1.4rem;
   background-color: #fff;
 }
@@ -624,8 +739,6 @@ body {
 }
 
 .contact .form {
-  <<<<<<< HEAD
-  /* position: relative; */
   margin: 0 auto;
   padding: 10px 0 50px 0;
   width: 60%;
@@ -649,8 +762,6 @@ body {
   display: block;
   margin: 0 width:15px;
   height: 15px;
-  =======
-  /* position: relative; */
   margin: 0 auto;
   padding: 30px 0 50px 0;
   width: 60%;
@@ -676,7 +787,6 @@ body {
   border-radius: 5px;
   border: none;
   text-align: left;
-  >>>>>>>ff039fbf1c3e5716519cd16b262f3e9dcfe81dd2
 }
 
 .contact .form-item select {
@@ -731,7 +841,7 @@ body {
 }
 
 .contact .form-item lable {
-  <<<<<<< HEAD display: inline-block;
+  display: inline-block;
   width: 140px;
   text-align: left;
   margin-right: 16px;
@@ -744,7 +854,7 @@ body {
   border-radius: 5px;
   border: none;
   vertical-align: top;
-  =======display: inline-block;
+  display: inline-block;
   width: 140px;
   text-align: left;
   margin-right: 16px;
@@ -757,7 +867,6 @@ body {
   border-radius: 5px;
   border: none;
   vertical-align: top;
-  >>>>>>>ff039fbf1c3e5716519cd16b262f3e9dcfe81dd2
 }
 
 .contact .form-item .file-wrap {
@@ -766,7 +875,7 @@ body {
 
 .call-and-line .wrap {
   background-color: #fff;
-  padding: 40px 0 80px;
+  padding: 40px 0;
 }
 
 .call-line-wrap {
@@ -921,6 +1030,8 @@ body {
 }
 
 .sale-box {
+  width: 100%;
+  height: auto;
   position: relative;
   display: inline-block;
 }
@@ -935,7 +1046,7 @@ body {
 .sale-text-wrap .desc {
   position: absolute;
   top: 30px;
-  left: 70px;
+  left: 7%;
   font-size: 2.2rem;
   margin: 0;
 }
@@ -943,7 +1054,7 @@ body {
 .sale-text-wrap .sub-desc {
   position: absolute;
   top: 120px;
-  left: 230px;
+  left: 22%;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
@@ -952,7 +1063,7 @@ body {
 .sale-text-wrap .second {
   position: absolute;
   top: 180px;
-  left: 40px;
+  left: 7%;
   font-size: 1.6rem;
   font-weight: normal;
   margin: 0;
@@ -960,8 +1071,8 @@ body {
 
 .sale-box .temporary-image {
   display: inline-block;
-  width: 500px;
-  height: 300px;
+  width: 30%;
+  height: auto;
   background-color: #eee;
   line-height: 300px;
 }
@@ -1052,19 +1163,13 @@ body {
 }
 
 .footer .back-to-top a:after {
-  <<<<<<< HEAD content: "TOP";
   display: block;
   position: absolute;
   bottom: 2px;
   left: 31px;
 }
 
-=======content: 'TOP';
-display: block;
-position: absolute;
-bottom: 2px;
-left: 31px;
-}
+
 
 .label-top {
   margin-right: 30px;
@@ -1086,15 +1191,131 @@ left: 31px;
   vertical-align: top;
 }
 
-@media screen and (max-width:768px) {
-  .contact .form {
-    padding: 10px 40px;
+@media screen and (max-width:1050px) {
+  .first-view .btn {
+    width: 35%;
   }
 
-  .contact .form-item {
-    margin: 15px 0;
-    text-align: left;
+  .first-view .btn a {
+    display: block;
+    font-size: 1.3rem;
+    width: 100%;
   }
-}
 
->>>>>>>ff039fbf1c3e5716519cd16b262f3e9dcfe81dd2
+  .reason .reason-box {
+    height: 350px;
+  }
+
+  .sale .wrap {}
+
+  @media screen and (max-width: 768px) {
+    .first-view .wrap {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .text-wrap {
+      text-align: center;
+    }
+
+    .text-wrap .catchcopy {
+      margin: 50px 0 0 30px;
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .text-wrap .sub-catchcopy {
+      margin: 0 0 20px 7px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .first-view .btn {
+      width: 460px;
+      position: absolute;
+      bottom: 50px;
+      right: 20%;
+    }
+
+    .contact .form {
+      padding: 10px 40px;
+    }
+
+    .contact .form-item {
+      margin: 15px 0;
+      text-align: left;
+    }
+
+    .reason .heading {
+      font-size: 2.5rem;
+    }
+
+    .reason .reason-box {
+      height: 380px;
+    }
+
+    .step {
+      display: block;
+    }
+
+    .step-wrap {
+      width: 80%;
+    }
+
+    .step .step-box {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .taishousha .heading {
+      padding: 10px 40px;
+      font-size: 3rem;
+    }
+
+    .call-and-line .call-line-wrap {
+      margin-bottom: 30px;
+    }
+
+
+    .sale .wrap {
+      width: 100%;
+      height: 350px;
+      padding: 0;
+      background: url('../image/bg.jpg')no-repeat;
+      background-size: cover;
+      /* text-align: center; */
+    }
+
+    .sale .temporary-image {
+      display: none;
+    }
+
+    .sale-box {
+      width: 100%;
+      height: auto;
+      position: relative;
+      text-align: center;
+    }
+
+    .sale .desc {
+      position: absolute;
+      left: 26%;
+      font-size: 2rem;
+    }
+
+    .sale .sub-desc {
+      position: absolute;
+      left: 45%;
+    }
+
+    .sale .second {
+      position: absolute;
+      left: 20%;
+    }
+
+    .sale .btn {
+      position: absolute;
+      bottom: 40px;
+      left: 18%;
+    }
+  }

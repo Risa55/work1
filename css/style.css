@@ -368,6 +368,7 @@ ul {
 
 .nayami .kaiketsu {
   margin: 0;
+  position: relative;
   font-size: 3.5rem;
   letter-spacing: 3px;
   font-weight: normal;
@@ -376,13 +377,15 @@ ul {
   background-color: rgb(255, 166, 166);
 }
 
-.triangle {
-  position: relative;
+.kaiketsu:after{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
   bottom: -50px;
-  left: 45%;
-  width: 0;
-  height: 0;
-  margin: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
   border-top: 50px solid #fff;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;

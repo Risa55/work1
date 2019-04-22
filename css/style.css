@@ -1421,9 +1421,9 @@ ul {
 
   
       .first-view .btn {
+        position: static;
         width: 460px;
         height: 70px;
-        margin-top: 40px auto;
         border: none;
         border-radius: 40px;
         text-align: center;

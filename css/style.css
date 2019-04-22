@@ -1114,6 +1114,10 @@ ul {
   vertical-align: top;
 }
 
+.form-apply {
+  display: none;
+}
+
 /*-------------------------
             sale
 --------------------------*/

@@ -254,9 +254,9 @@
                 <lable class="margin-right" for="text">利用内容<span>必須</span></lable>
                 <div class="display-inline-block margin-none">
                     <label class="otoiawase-btn"><input type="radio" name="entryPlan" value="問い合わせする"
-                            onclick="entryChange1();" checked="checked" />問い合わせ</label>
+                            onclick="clickInquiry();" checked="checked" />問い合わせ</label>
                     <label><input type="radio" name="entryPlan" value="申し込みする"
-                            onclick="entryChange1();" />申し込み（依頼）</label>
+                            onclick="clickApply();" />申し込み（依頼）</label>
                 </div>
             </div>
             <form class="form">
@@ -275,7 +275,7 @@
                 <div class="form-item">
                     <lable for="tel">TEL<span>必須</span></lable><input type="tel">
                 </div>
-                <div class="sub-wrap">
+                <div class="sub-wrap form-apply">
                     <div class="form-item">
                         <lable for="address">都道府県<span class="sub">任意</span></lable>
                         <select name="prefecture">
@@ -313,39 +313,6 @@
                     </div>
                 </div>
             </form>
-            <form>
-                <table border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                        <th>利用方法</th>
-                        <td>
-                            <label><input type="radio" name="entryPlan" value="hoge1" onclick="entryChange1();"
-                                    checked="checked" />初めて申し込む</label>
-                            <label><input type="radio" name="entryPlan" value="hoge2"
-                                    onclick="entryChange1();" />2度目以降の利用</label>
-                        </td>
-                    </tr>
-
-                    <!-- 表示非表示切り替え -->
-                    <tr id="firstBox">
-                        <th>紹介者</th>
-                        <td><input type="text" />
-                            <p>紹介された方のお名前を入力してください。</p>
-                        </td>
-                    </tr>
-
-                    <!-- 表示非表示切り替え -->
-                    <tr id="secondBox">
-                        <th>会員番号</th>
-                        <td><input type="text" />
-                            <p>会員番号を入力してください。</p>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-            <!-- 表示非表示切り替え -->
-            <div id="firstNotice">
-                特典:初めての方は30%オフ！
-            </div>
     </section>
     <section class="call-and-line">
         <div class="wrap">
@@ -397,25 +364,15 @@
         });
     });
 
-    function entryChange1() {
-        radio = document.getElementsByName('entryPlan')
-        if (radio[0].checked) {
-            //フォーム
-            document.getElementById('firstBox').style.display = "";
-            document.getElementById('secondBox').style.display = "none";
-            //特典
-            document.getElementById('firstNotice').style.display = "";
-        } else if (radio[1].checked) {
-            //フォーム
-            document.getElementById('firstBox').style.display = "none";
-            document.getElementById('secondBox').style.display = "";
-            //特典
-            document.getElementById('firstNotice').style.display = "none";
-        }
+    // 問い合わせが選択された場合に実行される
+    function clickApply() {
+       document.getElementsByClassName('form-apply')[0].style.display = "block";
     }
 
-    //オンロードさせ、リロード時に選択を保持
-    window.onload = entryChange1;
+    // 申し込みが選択された場合に実行される
+    function clickInquiry() {
+       document.getElementsByClassName('form-apply')[0].style.display = "none";
+    }
 </script>
 </script>
 

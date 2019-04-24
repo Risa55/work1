@@ -75,18 +75,18 @@ body {
 --------------------------*/
 .first-view .wrap {
   position: relative;
-  padding:50px;
+  padding: 50px;
   z-index: 0;
   overflow: hidden;
   background-color: rgb(0, 143, 175);
-  color:#fff;
+  color: #fff;
   /*半透明カラーの色*/
 }
 
 .first-view .wrap::before {
   content: '';
   background: url('../image/bg.jpg') no-repeat center;
-  background-size:cover;
+  background-size: cover;
   opacity: 0.9;
   /*半透明カラーの透明度*/
   filter: blur(8px);
@@ -159,12 +159,13 @@ ul {
   font-size: 1.4rem;
 }
 
-.first-view img{
+.first-view img {
   position: absolute;
-  top:0;
-  right:0;
-  margin:60px 80px;
+  top: 0;
+  right: 0;
+  margin: 60px 80px;
 }
+
 .first-view .btn {
   position: absolute;
   bottom: 60px;
@@ -184,7 +185,7 @@ ul {
   height: 80px;
   border: none;
   border-radius: 40px;
-  font-size:2.4rem;
+  font-size: 2.4rem;
   line-height: 80px;
   text-decoration: none;
   color: #fff;
@@ -374,10 +375,10 @@ ul {
   font-weight: normal;
   text-align: center;
   line-height: 120px;
-  background-color: rgb(255, 166, 166);
+  background-color: #fff;
 }
 
-.kaiketsu:after{
+.kaiketsu:after {
   content: "";
   position: absolute;
   right: 0;
@@ -826,6 +827,27 @@ ul {
 }
 
 /*-------------------------
+       kouken
+--------------------------*/
+.kouken-wrap {
+  padding: 0 50px 50px;
+  margin: 0 auto;
+  height: 630px;
+}
+
+.kouken .image {
+  margin: 8px;
+}
+
+.kouken .first-image-wrap {
+  display: inline-block;
+}
+
+.kouken .first-image-wrap {
+  display: inline-block;
+}
+
+/*-------------------------
        contact
 --------------------------*/
 .contact .wrap {
@@ -947,6 +969,10 @@ ul {
   background-color: rgb(180, 180, 180);
 }
 
+.form-item {
+  text-align: left;
+}
+
 .contact .form-item lable {
   display: inline-block;
   width: 140px;
@@ -964,7 +990,7 @@ ul {
   display: inline-block;
   width: 140px;
   text-align: left;
-  margin-right: 16px;
+  /* margin-right: 0px; */
 }
 
 .contact textarea {
@@ -1031,7 +1057,6 @@ ul {
 
 .call-line-wrap .line-id {
   margin: 0;
-  /* margin-top: 10px; */
   font-size: 2rem;
 }
 
@@ -1290,10 +1315,11 @@ ul {
     width: 35%;
   }
 
-  .first-view .btn a{
+  .first-view .btn a {
     width: 100%;
     font-size: 1.9rem;
   }
+
   .sale .temporary-image {
     width: 32%;
   }
@@ -1306,7 +1332,7 @@ ul {
     .first-view .btn a {
       display: block;
       font-size: 1.7rem;
-        width: 100%;
+      width: 100%;
     }
 
     .reason .heading {
@@ -1377,7 +1403,7 @@ ul {
         display: block;
         width: 500px;
         height: 500px;
-        margin:0 auto;
+        margin: 0 auto;
       }
 
       .catchcopy {
@@ -1422,7 +1448,7 @@ ul {
         font-size: 1.4rem;
       }
 
-  
+
       .first-view .btn {
         position: static;
         width: 460px;
@@ -1433,13 +1459,11 @@ ul {
         background-color: rgb(255, 175, 37);
       }
 
-
-
       .first-view .btn a {
         display: block;
         width: 460px;
         height: 70px;
-              margin-top: 40px auto;
+        margin-top: 40px auto;
 
         border-radius: 30px;
         font-size: 1.8rem;
@@ -1454,231 +1478,230 @@ ul {
         background-color: rgba(255, 255, 255, 0.3);
       }
 
-      /* .first-view .wrap {
-        background: rgba(255, 255, 255, 0.1);
-      } */
-
-      /* .text-wrap {
-        display: block;
-        margin: 0 auto;
-        width: 50%;
-        text-align: center;
-      }
-
-      .text-wrap .catchcopy {
-        margin: 50px 0 0 30px;
-        font-size: 5rem;
-        text-align: center;
-      }
-
-      .text-wrap .sub-catchcopy {
-        margin: 0 0 20px 7px;
-        font-size: 1.5rem;
-        text-align: center;
-      }
-
-      .first-view .btn {
-        display: block;
-        width: 460px;
-        margin: 0 auto; */
-
-    }
-
-    @media screen and (max-width: 835px) {
-      .nayami .wrap{
-        padding-top:100px;
-      }
-
-      .nayami .nayami-box{
-        width:65%;
-        margin:0 auto;
-        padding:30px; 
-        background-color: rgba(255, 255, 255, 0.6);
-         border-radius: 30px;
-      }
-      .nayami .nayami-box ul{
-        float:none;
-        text-align: left;
-      }
-      .nayami li{
-        display:block;
-        width:100%;
-        text-align: center;
-      }
-      .nayami .nayami-box p{
-        margin:5px;
-        text-align: left;
-      }
-     
-      .step {
-        display: block;
-      }
-
-      .step-wrap {
-        width: 80%;
-      }
-
-      .step .step-box {
-        display: block;
-        width: 100%;
-        margin-bottom: 30px;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-
-      .nayami .nayami-box p {
-        font-size: 1.6rem;
-      }
-
-      .nayami .kaiketsu {
-        font-size: 3rem;
-        line-height: 90px;
-      }
-
-      .nayami .kaiketsu span {
-        display: block;
-      }
-
-      .reason .wrap .text {
-        font-size: 2.5rem;
-      }
-
-      .reason .wrap .text span {
-        font-size: 5rem;
-      }
-
-      .contact .form {
-        padding: 10px 40px;
-      }
-
-      .contact .form-item {
-        margin: 15px 0;
-        text-align: left;
-      }
-
-      .step {
-        display: block;
-      }
-
-      .step-wrap {
-        width: 80%;
-      }
-
-      .step .step-box {
-        display: block;
-        width: 100%;
-        margin-bottom: 30px;
-      }
-
-      .taishousha .heading {
-        padding: 10px 40px;
-        font-size: 3rem;
-      }
-
-      .form {
-        padding: 10px 40px;
-        margin: 0 auto;
-      }
-
-      .form-item {
-        margin: 15px 0;
-        text-align: left;
-      }
-
-      .call-and-line .call-line-wrap {
-        margin-bottom: 30px;
-      }
-
-      .sale .heading {
-        font-size: 3rem;
-      }
-
-      .footer .logo {
-        width: 120px;
-      }
-
-      .footer .copyright {
-        font-size: 0.7rem;
-      }
-    }
-    @media screen and (max-width: 655px) {
-.nayami .nayami-box{
-  width:70%;
-  max-height:250px;
-}
-.nayami .nayami-box p{
-font-size: 1.3rem;
-}
-  .nayami .nayami-box .icon {
-font-size: 1.3rem;
-  }
-    @media screen and (max-width: 620px) {
-
-  
-
-      .reason .heading {
-        padding: 20px 30px 0;
-        font-size: 2.7rem;
-        line-height: 100px;
-      }
-
-      .reason .heading span {
-        font-size: 5rem;
-      }
-
-      .reason .wrap .text span {
-        display: block;
-        margin: 15px auto 20px;
-        width: 200px;
-        font-size: 6rem;
-      }
-
-      .reason .reason-box {
-        display: block;
-        width: 50%;
+      .kouken .image {
+        width: 300px;
         height: auto;
-        margin: 0 auto 20px;
       }
 
-      .reason .wrap .text:before {
-        content: "";
-        display: block;
-        position: relative;
-        top: -20px;
-        left: 40%;
-        width: 0;
-        height: 0;
-        margin: 0;
-        border-top: 50px solid rgb(41, 68, 89);
-        border-right: 50px solid transparent;
-        border-left: 50px solid transparent;
+      .kouken {
+        height: 650px;
       }
 
-      .sale .heading {
-        font-size: 3rem;
-        padding: 0 30px;
+
+      @media screen and (max-width: 835px) {
+        .nayami .wrap {
+          padding-top: 100px;
+        }
+
+        .nayami .nayami-box {
+          width: 65%;
+          margin: 0 auto;
+          padding: 30px;
+          background-color: rgba(255, 255, 255, 0.6);
+          border-radius: 30px;
+        }
+
+        .nayami .nayami-box ul {
+          float: none;
+          text-align: left;
+        }
+
+        .nayami li {
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        .nayami .nayami-box p {
+          margin: 5px;
+          text-align: left;
+        }
+
+        .step {
+          display: block;
+
+        }
+
+        .step-wrap {
+          width: 80%;
+        }
+
+        .step .step-box {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        .kouken .text {
+          padding: 0 50px;
+        }
       }
 
-      .sale .heading span {
-        display: block;
-        line-height: 30px;
+      @media screen and (max-width: 768px) {
+
+        .nayami .nayami-box p {
+          font-size: 1.6rem;
+        }
+
+        .nayami .kaiketsu {
+          font-size: 3rem;
+          line-height: 90px;
+        }
+
+        .nayami .kaiketsu span {
+          display: block;
+        }
+
+        .reason .wrap .text {
+          font-size: 2.5rem;
+        }
+
+        .reason .wrap .text span {
+          font-size: 5rem;
+        }
+
+        .contact .form {
+          padding: 10px 40px;
+        }
+
+        .contact .form-item {
+          margin: 15px 0;
+          text-align: left;
+        }
+
+        .step {
+          display: block;
+        }
+
+        .step-wrap {
+          width: 80%;
+        }
+
+        .step .step-box {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        .taishousha .heading {
+          padding: 10px 40px;
+          font-size: 3rem;
+        }
+
+        .form {
+          padding: 10px 40px;
+          margin: 0 auto;
+        }
+
+        .form-item {
+          margin: 15px 0;
+          text-align: left;
+        }
+
+
+        .call-and-line .call-line-wrap {
+          margin-bottom: 30px;
+        }
+
+        .sale .heading {
+          font-size: 3rem;
+        }
+
+        .footer .logo {
+          width: 120px;
+        }
+
+        .footer .copyright {
+          font-size: 0.7rem;
+        }
       }
 
-      .sale .sale-text-wrap {
-        font-size: 1.5rem;
-      }
+      @media screen and (max-width: 730px) {
 
-      .sale .desc {
-        margin-top: 40px;
-      }
+        .kouken {
+          height: 1070px;
+        }
 
-      .sale .btn {
-        width: 70%;
-      }
+        @media screen and (max-width: 655px) {
+          .nayami .nayami-box {
+            width: 70%;
+            max-height: 250px;
+          }
 
-      .sale .btn a {
-        display: block;
-        width: 100%;
-      }
-    }
+          .nayami .nayami-box p {
+            font-size: 1.3rem;
+          }
+
+          .nayami .nayami-box .icon {
+            font-size: 1.3rem;
+          }
+
+          @media screen and (max-width: 620px) {
+
+
+
+            .reason .heading {
+              padding: 20px 30px 0;
+              font-size: 2.7rem;
+              line-height: 100px;
+            }
+
+            .reason .heading span {
+              font-size: 5rem;
+            }
+
+            .reason .wrap .text span {
+              display: block;
+              margin: 15px auto 20px;
+              width: 200px;
+              font-size: 6rem;
+            }
+
+            .reason .reason-box {
+              display: block;
+              width: 50%;
+              height: auto;
+              margin: 0 auto 20px;
+            }
+
+            .reason .wrap .text:before {
+              content: "";
+              display: block;
+              position: relative;
+              top: -20px;
+              left: 40%;
+              width: 0;
+              height: 0;
+              margin: 0;
+              border-top: 50px solid rgb(41, 68, 89);
+              border-right: 50px solid transparent;
+              border-left: 50px solid transparent;
+            }
+
+            .sale .heading {
+              font-size: 3rem;
+              padding: 0 30px;
+            }
+
+            .sale .heading span {
+              display: block;
+              line-height: 30px;
+            }
+
+            .sale .sale-text-wrap {
+              font-size: 1.5rem;
+            }
+
+            .sale .desc {
+              margin-top: 40px;
+            }
+
+            .sale .btn {
+              width: 70%;
+            }
+
+            .sale .btn a {
+              display: block;
+              width: 100%;
+            }
+          }

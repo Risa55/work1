@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrap {
+  background-color: rgb(219, 236, 250);
+  padding-top: 30px;
+}
+
+.heading {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  line-height: 100px;
+  text-align: center;
+  background-color: rgb(26, 42, 55);
+  color: #fff;
+  letter-spacing: 2px;
+
+}
+
+.text-wrap {
+  padding: 30px;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}

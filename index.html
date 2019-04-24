@@ -228,51 +228,51 @@
     <section class="contact">
         <h1 class="heading">お問い合わせ・申し込み</h1>
         <div class="wrap">
-            <div class="label-top vertical-top display-inline-block">
-                <lable class="margin-right" for="text">利用内容<span>必須</span></lable>
-                <div class="display-inline-block margin-none">
-                    <label class="otoiawase-btn"><input type="radio" name="entryPlan" value="問い合わせする"
-                            onclick="clickInquiry();" checked="checked" />問い合わせ</label>
-                    <label><input type="radio" name="entryPlan" value="申し込みする"
-                            onclick="clickApply();" />申し込み（依頼）</label>
-                </div>
-            </div>
-            <form class="form">
-                <div class="form-item">
-                    <lable for="text">病院・会社名<span>必須</span></lable><input type="text">
+            <form class="form" method="POST" action="./completed.php">
+                <div class="label-top vertical-top display-inline-block">
+                    <lable class="margin-right" for="text">利用内容<span>必須</span></lable>
+                    <div class="display-inline-block margin-none">
+                        <label class="otoiawase-btn"><input type="radio" name="entryPlan" value="inquiry"
+                                onclick="clickInquiry();" checked="checked" />問い合わせ</label>
+                        <label><input type="radio" name="entryPlan" value="entry"
+                                onclick="clickApply();" />申し込み（依頼）</label>
+                    </div>
                 </div>
                 <div class="form-item">
-                    <lable for="name">ご担当者様名<span>必須</span></lable><input type="name">
+                    <lable for="text">病院・会社名<span>必須</span></lable><input type="text" name="company_name" required>
                 </div>
                 <div class="form-item">
-                    <lable for="text">フリガナ<span>必須</span></lable><input type="text">
+                    <lable for="name">ご担当者様名<span>必須</span></lable><input type="type" name="person_name" required>
                 </div>
                 <div class="form-item">
-                    <lable for="email">メールアドレス<span>必須</span></lable><input type="email">
+                    <lable for="text">フリガナ<span>必須</span></lable><input type="text" name="furigana" required>
                 </div>
                 <div class="form-item">
-                    <lable for="tel">TEL<span>必須</span></lable><input type="tel">
+                    <lable for="email">メールアドレス<span>必須</span></lable><input type="email" name="mail" required>
+                </div>
+                <div class="form-item">
+                    <lable for="tel">TEL<span>必須</span></lable><input type="tel" name="tel" required>
                 </div>
                 <div class="sub-wrap form-apply">
                     <div class="form-item">
                         <lable for="address">都道府県<span class="sub">任意</span></lable>
                         <select name="prefecture">
-                            <option value="hokkaido">北海道</option>
-                            <option value="osaka">大阪</option>
-                            <option value="tokyo">東京</option>
-                            <option value="okinawa">沖縄</option>
+                            <option value="北海道">北海道</option>
+                            <option value="大阪">大阪</option>
+                            <option value="東京">東京</option>
+                            <option value="沖縄">沖縄</option>
                         </select>
                     </div>
                     <div class="form-item">
                         <lable for="text">メーカー<span class="sub">任意</span></lable>
                         <select name="brand">
-                            <option value="paramount">パラマウント製</option>
-                            <option value="seahonence">シーホネンス製</option>
-                            <option value="francebed">フランスベッド製</option>
-                            <option value="platz">プラッツ製</option>
+                            <option value="パラマウント製">パラマウント製</option>
+                            <option value="シーホネンス製">シーホネンス製</option>
+                            <option value="フランスベッド製">フランスベッド製</option>
+                            <option value="プラッツ製">プラッツ製</option>
                         </select>
                     </div>
-                    <div class="file-wrap">
+                    <!-- <div class="file-wrap">
                         <div class="label-top vertical-top display-inline-block">
                             <lable for="text">写真の添付<span class="sub">任意</span></lable>
                         </div>
@@ -281,13 +281,13 @@
                             <input type="file" name="attachment_file" class="display-block">
                             <input type="file" name="attachment_file" class="display-block">
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="form-item">
-                    <lable for="text">その他<span class="sub">任意</span></lable><textarea type="text"
+                    <lable for="text">その他<span class="sub">任意</span></lable><textarea type="text" name="memo"
                         placeholder="ご要望などありましたらご記入ください"></textarea>
                     <div class="btn-wrap">
-                        <div class="btn"><a href="#">送信</a></div>
+                        <button type="submit" class="btn">送信</button>
                     </div>
                 </div>
             </form>

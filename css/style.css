@@ -89,7 +89,7 @@ body {
   background-size: cover;
   opacity: 0.9;
   /*半透明カラーの透明度*/
-  filter: blur(8px);
+  filter: blur(5px);
   /*ぼかし度*/
   position: absolute;
   top: -8px;
@@ -321,15 +321,25 @@ ul {
 }
 
 .nayami .wrap {
-  background: url("../image/nayami.jpg") no-repeat;
-  background-size: cover;
+  background: url("../image/nayami.jpg") no-repeat center;
+  background-size: contain;
   height: 430px;
+  padding-top: 90px;
+
 }
 
 .nayami .nayami-box {
-  width: 100%;
-  height: auto;
-  padding: 60px 150px 60px 100px;
+  /* width: 100%;
+    height: auto;
+    padding: 60px 150px 60px 100px; */
+}
+
+.nayami .nayami-box {
+  width: 470px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
 }
 
 .nayami .nayami-box:after {
@@ -343,11 +353,7 @@ ul {
   padding: 0;
   list-style: none;
   text-align: left;
-  float: right;
-}
-
-.nayami .nayami-box li {
-  text-align: left;
+  float: none;
 }
 
 .nayami .nayami-box li span {
@@ -362,10 +368,13 @@ ul {
 
 .nayami .nayami-box p {
   display: inline-block;
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 2rem;
   letter-spacing: 1px;
+  text-align: left;
 }
+
+
 
 .nayami .kaiketsu {
   margin: 0;
@@ -866,6 +875,10 @@ ul {
   display: inline-block;
 }
 
+.contact .btn {
+  color: #fff;
+}
+
 .contact .heading .order {
   background-color: rgb(255, 132, 132);
 }
@@ -1030,6 +1043,7 @@ ul {
 .call-line-wrap .icon {
   margin-top: 20px;
   font-size: 10rem;
+  color: #000;
 }
 
 .call-line-wrap .tel {
@@ -1038,7 +1052,7 @@ ul {
 }
 
 .call-line-wrap img {
-  box-shadow: 0 7px 10px 5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px 5px rgba(0, 0, 0, 0.15), 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1046,7 +1060,7 @@ ul {
 
 .call-line-wrap img:hover {
   background-color: rgba(255, 255, 255, 0.4);
-  /* box-shadow: 0 10px 18px 5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1; */
+  box-shadow: 0 10px 18px 5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
 }
 
 .call-line-wrap .qr-code {
@@ -1216,7 +1230,7 @@ ul {
   border-radius: 40px;
   text-align: center;
   line-height: 70px;
-  font-size: 1.6rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   text-decoration: none;
   color: #fff;
@@ -1310,6 +1324,18 @@ ul {
   vertical-align: top;
 }
 
+@media screen and (max-width:1370px) {
+  .nayami .nayami-box p {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  .nayami .nayami-box p {
+    font-size: 1.7rem;
+  }
+}
+
 @media screen and (max-width:1170px) {
   .first-view .btn {
     width: 35%;
@@ -1318,6 +1344,14 @@ ul {
   .first-view .btn a {
     width: 100%;
     font-size: 1.9rem;
+  }
+
+  .nayami .nayami-box p {
+    font-size: 1.7rem;
+  }
+
+  .nayami .nayami-box {
+    /* width: 40%; */
   }
 
   .sale .temporary-image {
@@ -1334,6 +1368,12 @@ ul {
       font-size: 1.7rem;
       width: 100%;
     }
+
+    .nayami .nayami-box p {
+      font-size: 1.6rem;
+    }
+
+
 
     .reason .heading {
       font-size: 3.5rem;
@@ -1360,8 +1400,6 @@ ul {
       width: 100%;
       height: 400px;
       padding: 0 40px;
-      /* background: url('../image/bg.jpg')no-repeat;
-      background-size: cover; */
       text-align: center;
     }
 
@@ -1448,7 +1486,6 @@ ul {
         font-size: 1.4rem;
       }
 
-
       .first-view .btn {
         position: static;
         width: 460px;
@@ -1464,7 +1501,6 @@ ul {
         width: 460px;
         height: 70px;
         margin-top: 40px auto;
-
         border-radius: 30px;
         font-size: 1.8rem;
         line-height: 70px;
@@ -1476,6 +1512,10 @@ ul {
 
       .btn a:hover {
         background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .nayami .nayami-box p {
+        font-size: 1.5rem;
       }
 
       .kouken .image {
@@ -1494,32 +1534,14 @@ ul {
         }
 
         .nayami .nayami-box {
-          width: 65%;
           margin: 0 auto;
           padding: 30px;
           background-color: rgba(255, 255, 255, 0.6);
           border-radius: 30px;
         }
 
-        .nayami .nayami-box ul {
-          float: none;
-          text-align: left;
-        }
-
-        .nayami li {
-          display: block;
-          width: 100%;
-          text-align: center;
-        }
-
-        .nayami .nayami-box p {
-          margin: 5px;
-          text-align: left;
-        }
-
         .step {
           display: block;
-
         }
 
         .step-wrap {
@@ -1540,7 +1562,7 @@ ul {
       @media screen and (max-width: 768px) {
 
         .nayami .nayami-box p {
-          font-size: 1.6rem;
+          font-size: 1.5rem;
         }
 
         .nayami .kaiketsu {
@@ -1598,7 +1620,6 @@ ul {
           text-align: left;
         }
 
-
         .call-and-line .call-line-wrap {
           margin-bottom: 30px;
         }
@@ -1617,7 +1638,6 @@ ul {
       }
 
       @media screen and (max-width: 730px) {
-
         .kouken {
           height: 1070px;
         }
@@ -1625,20 +1645,21 @@ ul {
         @media screen and (max-width: 655px) {
           .nayami .nayami-box {
             width: 70%;
-            max-height: 250px;
           }
 
           .nayami .nayami-box p {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
           }
 
           .nayami .nayami-box .icon {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
           }
 
           @media screen and (max-width: 620px) {
 
-
+            .nayami .nayami-box p {
+              font-size: 1.3rem;
+            }
 
             .reason .heading {
               padding: 20px 30px 0;

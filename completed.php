@@ -68,7 +68,7 @@ mb_internal_encoding("UTF-8");
 $header = '';
 $header .= "Content-Type: text/plain \r\n";
 $header .= "Return-Path: info@iryoubed-kaitori.com \r\n";
-$header .= "From: 医療ベッド買取.com \r\n";
+$header .= "From: 医療ベッド買取.com<info@iryoubed-kaitori.com> \r\n";
 $header .= "Sender: 医療ベッド買取.com \r\n";
 $header .= "Reply-To: info@iryoubed-kaitori.com \r\n";
 $header .= "Organization: 医療ベッド買取.com \r\n";

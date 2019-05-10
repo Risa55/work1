@@ -227,7 +227,7 @@
     <section class="contact" id="contact">
         <h1 class="heading">お問い合わせ・申し込み</h1>
         <div class="wrap">
-            <form class="form" method="POST" action="./completed.php">
+            <form class="form" method="POST" action="./completed.php" enctype="multipart/form-data">
                 <div class="label-top vertical-top display-inline-block">
                     <lable class="margin-right" for="text">利用内容<span>必須</span></lable>
                     <div class="display-inline-block margin-none">
@@ -314,16 +314,16 @@
                             <option value="プラッツ製">プラッツ製</option>
                         </select>
                     </div>
-                    <!-- <div class="file-wrap">
+                    <div class="file-wrap">
                         <div class="label-top vertical-top display-inline-block">
                             <lable for="text">写真の添付<span class="sub">任意</span></lable>
                         </div>
                         <div class="display-inline-block margin-none">
-                            <input type="file" name="attachment_file" class="display-block">
-                            <input type="file" name="attachment_file" class="display-block">
-                            <input type="file" name="attachment_file" class="display-block">
+                            <input type="file" name="attachment_file[]" class="display-block">
+                            <input type="file" name="attachment_file[]" class="display-block">
+                            <input type="file" name="attachment_file[]" class="display-block">
                         </div>
-                    </div> -->
+                    </div>
                 </div>
                 <div class="form-item">
                     <lable for="text">その他<span class="sub">任意</span></lable><textarea type="text" name="memo"

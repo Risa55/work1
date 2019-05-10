@@ -329,13 +329,7 @@ ul {
 }
 
 .nayami .nayami-box {
-  /* width: 100%;
-    height: auto;
-    padding: 60px 150px 60px 100px; */
-}
-
-.nayami .nayami-box {
-  width: 100%;
+  width: 36%;
   margin: 0 auto;
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -1003,7 +997,6 @@ ul {
   display: inline-block;
   width: 140px;
   text-align: left;
-  /* margin-right: 0px; */
 }
 
 .contact textarea {
@@ -1245,9 +1238,6 @@ ul {
   color: rgba(255, 255, 255, 0.927);
 }
 
-.footer-wrap {
-}
-
 .footer .logo {
   width: 180px;
   height: 40px;
@@ -1322,6 +1312,10 @@ ul {
 }
 
 @media screen and (max-width:1370px) {
+  .nayami .nayami-box {
+    width: 40%;
+  }
+
   .nayami .nayami-box p {
     font-size: 1.9rem;
   }
@@ -1348,7 +1342,7 @@ ul {
   }
 
   .nayami .nayami-box {
-    /* width: 40%; */
+    width: 40%;
   }
 
   .sale .temporary-image {
@@ -1366,11 +1360,13 @@ ul {
       width: 100%;
     }
 
+    .nayami .nayami-box {
+      width: 45%;
+    }
+
     .nayami .nayami-box p {
       font-size: 1.6rem;
     }
-
-
 
     .reason .heading {
       font-size: 3.5rem;
@@ -1436,7 +1432,7 @@ ul {
 
       .first-view .wrap .text-wrap {
         display: block;
-        width: 300px;
+        text-align: center;
         height: 500px;
         margin: 0 auto;
       }
@@ -1450,15 +1446,17 @@ ul {
         font-size: 3rem;
       }
 
-      ul {
-        margin: 0;
-        padding: 0;
-      }
-
       .point-wrap {
         display: flex;
-        flex-direction: row;
-        margin: 30px 0 0;
+        justify-content: center;
+      }
+
+      .nayami .nayami-box {
+        width: 45%;
+      }
+
+      ul {
+        margin: 0;
         padding: 0;
       }
 
@@ -1485,7 +1483,8 @@ ul {
 
       .first-view .btn {
         position: static;
-        width: 300px;
+        margin: 30px auto 0;
+        width: 400px;
         height: 70px;
         border: none;
         border-radius: 40px;
@@ -1495,7 +1494,7 @@ ul {
 
       .first-view .btn a {
         display: block;
-        width: 200px;
+        width: 400px;
         height: 70px;
         margin-top: 40px auto;
         border-radius: 30px;
@@ -1530,11 +1529,9 @@ ul {
           padding-top: 100px;
         }
 
+
         .nayami .nayami-box {
-          margin: 0 auto;
-          padding: 30px;
-          background-color: rgba(255, 255, 255, 0.6);
-          border-radius: 30px;
+          width: 50%;
         }
 
         .step {
@@ -1557,6 +1554,9 @@ ul {
       }
 
       @media screen and (max-width: 768px) {
+        .nayami .nayami-box {
+          width: 55%;
+        }
 
         .nayami .nayami-box p {
           font-size: 1.5rem;
@@ -1635,6 +1635,10 @@ ul {
       }
 
       @media screen and (max-width: 730px) {
+        .nayami .nayami-box {
+          width: 60%;
+        }
+
         .kouken {
           height: 1070px;
         }
@@ -1653,6 +1657,23 @@ ul {
           }
 
           @media screen and (max-width: 620px) {
+            .first-view .catchcopy {
+              text-align: center;
+            }
+
+            .first-view .sub-catchcopy {
+              text-align: center;
+              font-size: 2rem;
+            }
+
+            .first-view .br {
+              display: block;
+            }
+
+            .first-view .btn a {
+              margin: 0 auto;
+              font-size: 1.4rem;
+            }
 
             .nayami .nayami-box p {
               font-size: 1.3rem;
@@ -1721,5 +1742,6 @@ ul {
             .sale .btn a {
               display: block;
               width: 100%;
+              font-size: 1.6rem;
             }
           }

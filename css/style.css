@@ -1156,7 +1156,6 @@ ul {
             sale
 --------------------------*/
 .sale .wrap {
-  /* position: relative; */
   width: 100%;
   height: 400px;
   background-color: rgb(219, 236, 250);
@@ -1167,9 +1166,8 @@ ul {
   background-color: rgb(219, 236, 250);
 }
 
-
 .sale-text-wrap {
-  width: 300px;
+  /* width: 500px; */
   font-size: 2rem;
   margin-top: 20px;
   float: left;
@@ -1204,7 +1202,7 @@ ul {
 
 .sale .btn {
   display: inline-block;
-  width: 300px;
+  width: 600px;
   height: 70px;
   border: none;
   border-radius: 40px;
@@ -1216,13 +1214,14 @@ ul {
 
 .sale .btn a {
   display: block;
-  width: 300px;
+  width: 600px;
   height: 70px;
+  margin: 0;
   border: none;
   border-radius: 40px;
   text-align: center;
   line-height: 70px;
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: 1px;
   text-decoration: none;
   color: #fff;
@@ -1643,7 +1642,21 @@ ul {
           height: 1070px;
         }
 
+        .sale .btn {
+          width: 80%;
+        }
+
+        .sale .btn a {
+          display: block;
+          width: 100%;
+          font-size: 2rem;
+        }
+
         @media screen and (max-width: 655px) {
+          .point-wrap {
+            margin-top: 30px;
+          }
+
           .nayami .nayami-box {
             width: 70%;
           }
@@ -1672,7 +1685,7 @@ ul {
 
             .first-view .btn a {
               margin: 0 auto;
-              font-size: 1.4rem;
+              font-size: 1.6rem;
             }
 
             .nayami .nayami-box p {
@@ -1742,6 +1755,6 @@ ul {
             .sale .btn a {
               display: block;
               width: 100%;
-              font-size: 1.6rem;
+              font-size: 1.8rem;
             }
           }

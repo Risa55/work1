@@ -101,8 +101,7 @@ if(!mb_send_mail($_POST['mail'], "医療ベッド買取.comへのお問い合わ
 };
  
 // サービス担当者にメール送信
-// "okasei.kaigobed@gmail.com"
-if(!mb_send_mail("yamasaki0406@gmail.com", "医療ベッド買取.comへのお問い合わせがありました", $service_mail_body, $header)){
+if(!mb_send_mail("okasei.kaigobed@gmail.com", "医療ベッド買取.comへのお問い合わせがありました", $service_mail_body, $header)){
   $send_mail_completed = false;
 };
 
